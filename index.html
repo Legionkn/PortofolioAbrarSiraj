@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Responsive Portfolio Website</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet" />
+    </head>
+    <body>
+        <header class="header">
+            <a href="#home" class="logo">Abrar
+                <span>Siraj</span>
+            </a>
+
+            <i class="bx bx-menu" id="menu-icon"></i>
+
+            <nav class="navbar md">
+                <a href="#home" class="active">Home</a>
+                <a href="#career">Career History</a>
+                <a href="#performance">Performance</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+        </header>
+
+        <section class="home" id="home">
+            <div class="home-content">
+                <h1>Hi, It's <span>Abrar</span></h1>
+                <h3 class="text-animation">I'm a <span></span></h3>
+                <p>Nama saya Abrar siraj,
+                    seorang pemain sepak bola yang saat ini bermain untuk klub
+                    Nathan Lebak Fc.
+                    Saya bangga menjadi bagian dari Nathan Lebak Fc, klub yang
+                    menjunjung tinggi nilai kerja sama tim dan dedikasi.
+                    Bergabung dengan Real Madrid merupakan mimpi besar dalam
+                    karier saya,
+                    di mana saya dapat mengembangkan kemampuan dan berkontribusi
+                    pada kesuksesan tim. </p>
+
+                <div class="social-icons">
+                    <a href="https://instagram.com"><i
+                            class='bx bxl-instagram'></i></a>
+                    <a href="https://tiktok.com"><i
+                            class='bx bxl-tiktok'></i></a>
+                </div>
+
+                <div class="btn-group">
+                    <a href="#" class="btn">Hire</a>
+                    <a href="#contact" class="btn">Contact</a>
+                </div>
+            </div>
+
+            <div class="home-img">
+                <img src="/img/profile.jpeg" alt="Profile Picture">
+            </div>
+
+        </section>
+
+        <section class="career history" id="career">
+            <h2 class="heading">Career history</h2>
+
+            <div class="timeline-items">
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2021/2022</div>
+                    <div class="timeline-content">
+                        <img src="/img/farmel fc.jpeg" alt="Farmel Fc"
+                            class="timeline-image">
+                        <h3>Farmel Fc</h3>
+                        <p>Liga 3</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2022/2023</div>
+                    <div class="timeline-content">
+                        <img src="/img/NLFC.jpeg" alt="Nathan Lebak Fc"
+                            class="timeline-image">
+                        <h3>Nathan Lebak Fc</h3>
+                        <p>Liga 3</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="performance" id="performance">
+            <h2 class="heading">Performance & Skills</h2>
+            <div class="chart-container">
+                <canvas id="startingElevenChart"></canvas>
+                <div class="percentage">Starting Eleven: 30%</div>
+            </div>
+            <div class="chart-container">
+                <canvas id="minutesChart"></canvas>
+                <div class="percentage">Minutes: 28%</div>
+            </div>
+            <div class="chart-container">
+                <canvas id="goalParticipationChart"></canvas>
+                <div class="percentage">Goal Participation: 0%</div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2 class="heading">Contact <span>Me</span></h2>
+
+            <form action>
+                <div class="input-group">
+                    <div class="input-box">
+                        <input type="text"
+                            placeholder="Full Name">
+                        <input type="email"
+                            placeholder="Email">
+                    </div>
+                    <div class="input-box">
+                        <input type="number"
+                            placeholder="Phone Number">
+                        <input type="text"
+                            placeholder="Subject">
+                    </div>
+                </div>
+
+                <div class="input-group-2">
+                    <textarea name id cols="30" rows="10"
+                        placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send Message" class="btn">
+                </div>
+            </form>
+        </section>
+
+        <footer class="footer">
+            <div class="social">
+                <a href="https://instagram.com"><i
+                        class='bx bxl-instagram'></i></a>
+                <a href="https://tiktok.com"><i
+                        class='bx bxl-tiktok'></i></a>
+            </div>
+            <ul class="list">
+                <li>
+                    <a href="#">FAQ</a>
+                </li>
+                <li>
+                    <a href="#">Career History</a>
+                </li>
+                <li>
+                    <a href="#">Performance</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+            <p class="copyright">
+                @ Abrar Siraj | All Rights Reserved
+            </p>
+        </footer>
+
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    </body>
+</html>
